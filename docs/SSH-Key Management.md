@@ -78,6 +78,12 @@ Host github.com-personal
   Hostname github.com
   IdentityFile ~/.ssh/personal
 ```
+Then Paste this in the cmd
+
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/personal
+```
 
 Move to your project and setup git user config
 ```
