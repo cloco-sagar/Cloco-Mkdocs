@@ -4,4 +4,5 @@
 pip install mkdocs
 cd Cloco-Mkdocs
 pip install material
+mkdocs serve
 ```
