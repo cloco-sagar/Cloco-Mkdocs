@@ -1,0 +1,8 @@
+site_name: Cloco Documentation
+theme:
+  name: material
+  features:
+    - content.code.copy
+
+extra:
+  generator: false
