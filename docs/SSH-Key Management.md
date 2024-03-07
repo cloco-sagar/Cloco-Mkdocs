@@ -96,3 +96,28 @@ cd cloco_project
 git config user.email "cloco@gmail.com"
 git config user.name "cloco"
 ```
+
+### Problem 3: Please make sure you have the correct access rights
+You might get this error when you have setup multiple ssh key
+
+TO fix this issue first make sure that you have initialized the git by
+```
+git init
+```
+Then make sure to add the git email and name in that particular git
+```
+git config user.email "<email_address>" // Replace email_address with your own email_address
+git config user.name "<user_name>" // Replace user_name with your own user_name
+
+Example:
+git config user.email "cloco@gmail.com"
+git config user.name "cloco"
+```
+
+Then paste this code:
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/personal //Make sure to change it according to the your git private key of that repo
+```
+
+Now you can clone or push your repo of which ssh key is added to the github.
