@@ -3,6 +3,6 @@
 ```
 pip install mkdocs
 cd Cloco-Mkdocs
-pip install material
+pip install mkdocs-material
 mkdocs serve
 ```
